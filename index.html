@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Dashboard | SAU</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="top-bar-wrapper">
+            <header>
+                <div class="header-container">
+                    <div class="user-profile">
+                        <button id="mobile-menu-btn" class="hamburger-btn">☰</button>
+                        <div class="avatar">AVS</div>
+                        <div class="user-info">
+                            <span class="user-name">Aditya Vikram Singh</span>
+                            <span class="user-program">Dual Degree B.Tech - M.Tech (CSE)</span>
+                            <span class="user-program">South Asian University, Delhi</span>
+                        </div>
+                    </div>
+
+                    <div class="course-title">
+                        <h1>Fundamentals of Web Development</h1>
+                        <p>South Asian University</p>
+                    </div>
+                </div>
+            </header>
+
+            <nav>
+                <ul id="main-nav" class="nav-links">
+                    <li><a href="#home">Course Overview</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 1. Main Content Container -->
+        <main class="dashboard-container">
+            
+            <section id="home" class="dashboard-section">
+                <h2>Course Overview</h2>
+                <div class="info-card">
+                    <p><strong>Course Name:</strong> Fundamentals of Web Development (CSE310)</p>
+                    <p><strong>Instructors:</strong> Anmol Narayan, Prashant Singh, Kundan Kumar Sharma</p>
+                    <p><strong>Semester:</strong> Winter 2026</p>
+                </div>
+            </section>
+
+            <!-- 2. Dynamic Stats Grid -->
+            <div class="stat-grid">
+                <div class="stat-card" style="border-top: 4px solid #004085;">
+                    <h3 id="stat-total-assignments">0</h3>
+                    <p>Total Assignments</p>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid #d4af37;">
+                    <h3 id="stat-announcements">0</h3>
+                    <p>Announcements</p>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid #198754;">
+                    <h3 id="stat-completed">0</h3>
+                    <p>Completed Tasks</p>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid #dc3545;">
+                    <h3 id="stat-pending">0</h3>
+                    <p>Pending Tasks</p>
+                </div>
+            </div>
+
+            <!-- 3. Announcements Dropdowns -->
+            <section id="announcements" class="dashboard-section">
+                <h2>Announcements</h2>
+                <div class="announcement-item">
+                    <button class="toggle-btn">End Semester Project Presentation Slots Allotted ▼</button>
+                    <div class="toggle-content">
+                        <p>The presentation slots and room allocations for the upcoming End Semester Project Presentations have been finalized. Please check the attached document to find your designated room (125, 006, 007, 233, or 126) and presentation sequence. Ensure you arrive 15 minutes prior to your block.</p>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <button class="toggle-btn">End Semester Project Proposal Deadline Reminder ▼</button>
+                    <div class="toggle-content">
+                        <p>A quick reminder that the submission for the End Semester Project Proposal is due on 8/2/2026 at 11:59 PM. Your 1-page proposal must include your problem statement, target audience, and chosen tech stack. Remember, delayed submissions incur a 10% penalty per day.</p>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <button class="toggle-btn">Assignment 5 (Course Selection Portal) Deployment Environment ▼</button>
+                    <div class="toggle-content">
+                        <p>For Assignment 5, please ensure your Course Selection Portal is fully deployed on the designated university testing environment. Double-check that all client-side state handling and form validation routines function properly in the live build. Your submission must include the live hosting URL alongside your source code repository link.</p>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <button class="toggle-btn">Assignment 6 (Moodle Dashboard) Final Packaging Rules ▼</button>
+                    <div class="toggle-content">
+                        <p>For Assignment 6, your complete Moodle Dashboard must be structured with strict file separation across independent HTML, CSS, and JavaScript files. Ensure all internal navigation links anchor correctly, all resource assets feature explicit download handling, and the layout remains fully responsive on mobile screen widths before compiling your final submission directory.</p>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <button class="toggle-btn">Extra Doubt-Clearing Session & Project Review Allotted ▼</button>
+                    <div class="toggle-content">
+                        <p>Dear students, the teaching team will be holding an additional comprehensive review session this Friday from 2:00 PM to 4:00 PM. This session is dedicated to resolving any pending doubts across the course syllabus—whether you need assistance fine-tuning complex HTML structures, debugging responsive CSS layouts, or optimizing JavaScript logic. Please bring your specific code questions and project drafts for direct feedback.</p>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <button class="toggle-btn">Welcome to Fundamentals of Web Design (CS106) ▼</button>
+                    <div class="toggle-content">
+                        <p>Welcome to CS106! This semester, we will be covering the core concepts of front-end development, from basic HTML structures in the Mini-Wiki assignment to advanced CSS layouts in the Blogging Website project. We look forward to seeing the creative projects you build.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Assignments Cards Grid -->
+            <section id="assignments" class="dashboard-section">
+                <h2>Upcoming & Past Assignments</h2>
+                <div class="assignment-grid"> 
+                    <div class="task-card">
+                        <h3>Assignment 6: Moodle Dashboard</h3>
+                        <p class="due-date">Due: May 25, 2026</p>
+                        <span class="status pending">Pending</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3>Assignment 5: Course Selection Portal</h3>
+                        <p class="due-date">Due: May 25, 2026</p>
+                        <span class="status completed">Submitted</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3>Assignment 4: JS Logic Problems</h3>
+                        <p class="due-date">Due: April 8, 2026</p>
+                        <span class="status completed">Submitted</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3>Assignment 3: Cooking Recipes Website</h3>
+                        <p class="due-date">Due: March 31, 2026</p>
+                        <span class="status completed">Submitted</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3>Assignment 2: CSS Blogging Website</h3>
+                        <p class="due-date">Due: March 15, 2026</p>
+                        <span class="status completed">Submitted</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3>Assignment 1: Mini-Wiki Project</h3>
+                        <p class="due-date">Due: February 15, 2026</p>
+                        <span class="status completed">Submitted</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Course Resources Section -->
+            <section id="resources" class="dashboard-section">
+                <h2>Course Resources</h2>
+                <div class="info-card" style="margin-bottom: 20px;">
+                    <h3 style="color: #004085; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-bottom: 15px;">📚 Study Material</h3>
+                    
+                    <h4 style="color: #222; margin-top: 15px; margin-bottom: 8px;">HTML</h4>
+                    <ul class="resource-list" style="margin-left: 15px;">
+                        <li><a href="IntroHTML.pdf" download>📄 IntroHTML.pdf</a></li>
+                    </ul>
+
+                    <h4 style="color: #222; margin-top: 20px; margin-bottom: 8px;">CSS</h4>
+                    <ul class="resource-list" style="margin-left: 15px;">
+                        <li><a href="Cascading_Style_Sheets(CSS).pdf" download>📄 Cascading Style Sheets(CSS).pdf</a></li>
+                    </ul>
+
+                    <h4 style="color: #222; margin-top: 20px; margin-bottom: 8px;">JavaScript</h4>
+                    <ul class="resource-list" style="margin-left: 15px;">
+                        <li><a href="javascript.pdf" download>📄 javascript.pdf (Intro to Client-Side Scripting)</a></li>
+                        <li><a href="javascript2.pdf" download>📄 javascript 2.pdf (Scope, Hoisting, Objects)</a></li>
+                        <li><a href="dom_lecture.pdf" download>📄 document_object_model_lecture.pdf (DOM Manipulation)</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-card" style="margin-bottom: 20px;">
+                    <h3 style="color: #004085; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-bottom: 15px;">📝 Assignments</h3>
+                    <ul class="resource-list">
+                        <li><a href="FWD_Assignment_1.pdf" download>📄 FWD_Assignment_1.pdf (Mini-Wiki Project)</a></li>
+                        <li><a href="FWD_Assignment_2.pdf" download>📄 FWD_Assignment_2.pdf (CSS Blogging Website)</a></li>
+                        <li><a href="FWD_ASSIGNMENT_3.pdf" download>📄 FWD_ASSIGNMENT_3.pdf (Cooking Recipes Website)</a></li>
+                        <li><a href="FWD_Assignment_4.pdf" download>📄 FWD_Assignment_4.pdf (Assignment 4: JS Logic Problems)</a></li>
+                        <li><a href="FWD_Assignment_5.pdf" download>📄 FWD_Assignment_5.pdf (Assignment 5: Course Selection Portal)</a></li>
+                        <li><a href="FWD_Assignment_6.pdf" download>📄 FWD_Assignment_6.pdf (Assignment 6: Moodle Dashboard)</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: #004085; border-bottom: 2px solid #d4af37; padding-bottom: 5px; margin-bottom: 15px;">🚀 Projects & Presentations</h3>
+                    <ul class="resource-list">
+                        <li><a href="FWD_Project.pdf" download>📄 FWD_Project.pdf (Course Project Guidelines Phase 0)</a></li>
+                        <li><a href="End_Sem_Project_Slots.pdf" download>📄 End_Sem_Project_Slots.pdf (End Semester Project Presentation Schedule)</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 6. Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>SAU eLearning Support</h4>
+                    <p>Maidan Garhi, New Delhi 110068</p>
+                    <p>Email: moodle-helpdesk@support.int</p>
+                    <p>Phone: +91 (11) 3565-6500</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Course Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Course Overview</a></li>
+                        <li><a href="#announcements">Announcements</a></li>
+                        <li><a href="#assignments">Assignments</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>University Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">University Library</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">IT Helpdesk</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 aditya vikram singh | Fundamentals of Web Development</p>
+            </div>
+        </footer>
+
+        <div id="download-toast" class="download-toast">
+            <span class="toast-icon">⬇️</span>
+            <span id="toast-message">Downloading file...</span>
+        </div>
+        
+        <!-- 7. Script Tag -->
+        <script src="script.js"></script>
+    </body>
+</html>
